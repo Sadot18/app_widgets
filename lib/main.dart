@@ -14,9 +14,14 @@ class Main extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'App de Widgets',
       home: CustomHomePage(),
-      //initialRoute: '/',
-      // routes: ,
+      initialRoute: 'home',
+      routes: {
+        'home':(context) => CustomHomePage(),
+        'listview':(context) => ListviewScreen(),
+        'alert':(context) => AlertScreen(),
+        'avatar':(context) => AvatarScreen(),
+        'movie':(context) => MovieScreen(),
+      }
     );
   }
 }
-
