@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:app_widgets/screens/screens.dart';
 
 void main() {
   runApp(Main());
@@ -10,15 +11,12 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App ed Widgets',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('App de widgets'),
-          ),
-          body: Text('Welcome to my app!'),
-        ),
-        //initialRoute: '/',
-        // routes: ,
+      debugShowCheckedModeBanner: false,
+      title: 'App de Widgets',
+      home: CustomHomePage(),
+      //initialRoute: '/',
+      // routes: ,
     );
   }
 }
+
