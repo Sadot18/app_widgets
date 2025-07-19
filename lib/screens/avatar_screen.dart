@@ -6,7 +6,7 @@ class AvatarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(leading: Text("Avatar")),
+      appBar: AppBar(title: Text("Avatar")),
       body: Center(child: Text('This is the Avatar screen!')),
     );
   }
