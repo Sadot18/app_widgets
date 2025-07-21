@@ -5,6 +5,7 @@ class CustomHomePage extends StatelessWidget {
   const CustomHomePage({super.key});
 
 //TODO: investigar como hacer dinamico el listado de widgets
+//usando modelos (models)
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +17,15 @@ class CustomHomePage extends StatelessWidget {
         ),
       ),
       body: CustomListView(),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          SizedBox(width: 1),
+          FloatingActionButton( heroTag: 'next', onPressed: null, child: Text('>>')),
+          FloatingActionButton(heroTag: 'home', onPressed: null, child: Text('Home')),
+          FloatingActionButton(heroTag: 'previous', onPressed: null, child: Text('<<')),
+        ],
+      ),
     );
   }
 }
