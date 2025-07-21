@@ -12,7 +12,7 @@ class AlertScreen extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.only(left: 50, right: 50),
           child: FadeInImage(
-            placeholder: AssetImage('assets/no-image.jpg'),
+            placeholder: AssetImage('assets/placeholder.png'),
             image: NetworkImage(
               "https://cdn.pixabay.com/photo/2024/05/22/21/51/dog-8781844_960_720.jpg",
             ),
