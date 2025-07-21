@@ -1,3 +1,5 @@
+import 'package:app_widgets/routes/routes.dart';
+import 'package:app_widgets/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:app_widgets/screens/screens.dart';
 
@@ -14,14 +16,11 @@ class Main extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'App de Widgets',
       home: CustomHomePage(),
-      initialRoute: 'home',
-      routes: {
-        'home':(context) => CustomHomePage(),
-        'listview':(context) => ListviewScreen(),
-        'alert':(context) => AlertScreen(),
-        'avatar':(context) => AvatarScreen(),
-        'movie':(context) => MovieScreen(),
-      }
+      initialRoute: Routes.initialRoute,
+      routes: Routes.routes,
+      onGenerateRoute: Routes.onGenerateRoute,
+
+      theme: ThemeApp.customThemeLight(),
     );
   }
 }
